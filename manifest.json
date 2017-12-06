@@ -1,0 +1,31 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "icons/easytimer_browser_icon-128px.png",
+         "16": "icons/easytimer_browser_icon-16px.png",
+         "32": "icons/easytimer_browser_icon-32px.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Open Timer"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval';object-src 'self'",
+   "description": "Be more organized with the timer",
+   "icons": {
+      "128": "icons/easytimer_icon-128px.png",
+      "16": "icons/easytimer_icon-16px.png",
+      "256": "icons/easytimer_icon-256px.png",
+      "32": "icons/easytimer_icon-32px.png",
+      "48": "icons/easytimer_icon-96px.png",
+      "96": "icons/easytimer_icon-96px.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmJnbZA842jHc1GucZ+btSV4gCQvQnmB3x7DbEWTQKA5F6BcK2A46TT9h3gqxi8btVnXgYQaxmQzLW8ulM5nsiLqwTXwjqiJ4WpKZck2RaqcmT2x+y24XGKLhLkLiZSZHsQ+mf6Yb6/Ds8ZPL659G8hKjzMuBx9bB4tqc6ofaPVuM34KM+FQwJNUCck69sVt/AtwgN3ejtmAyEzo68Y1q5BMMQ4de+d2ryhkRLRqBUIuscufqketRwNrLqBfnhLa3AVKtJHTLt/8l9OK2plg9tfyOr0Tqqd0FQcqpcGbEhQVOgOTD6WOixmseWHHuff0Feaj0v8G+tL3Xa0eZHoTF9QIDAQAB",
+   "manifest_version": 2,
+   "name": "Easy Timer",
+   "permissions": [ "tabs", "activeTab", "storage", "unlimitedStorage", "\u003Call_urls>", "webRequest", "webRequestBlocking", "management", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

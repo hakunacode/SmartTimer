@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Easy Timer</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="widget">
+		<div class="widget__head">
+			<button class="widget__tab active" title="alarm" data-tab-btn="alarm"><i class="icon-alarm"></i></button>
+			<button class="widget__tab" title="clock" data-tab-btn="clock"><i class="icon-clock"></i></button>
+			<button class="widget__tab" title="stopwatch" data-tab-btn="stopwatch"><i class="icon-stopwatch"></i></button>
+			<button class="widget__tab" title="timer" data-tab-btn="timer"><i class="icon-timer"></i></button>
+		</div>
+		<div class="widget__body">
+			<div class="widget__display  widget__display--alarm show" data-tab="alarm">
+				<div class="widget__field">
+					<div class="widget__field-input" id="alarmInput">
+						<input type="text" maxlength="2" placeholder="00"  id="alarmHours" class="widget__input">
+						<span class="wdiget__field-separator">:</span>
+						<input type="text" maxlength="2" placeholder="00"  id="alarmMinutes" class="widget__input">
+					</div>
+					<div class="widget__field-output" id="alarmOutput"></div>
+				</div>
+				<div class="widget__panel">
+					<label for="enableAlarmAudio" class="widget__check">
+						<input type="checkbox" id="enableAlarmAudio">
+						<i></i>
+						<span class="widget__check-text">Enable Audio</span>
+					</label>
+					<button class="widget__btn  widget__btn--square" id="setAlarm" data-text="Cancel">SET</button>
+				</div>
+			</div>
+			<div class="widget__display  widget__display--clock" data-tab="clock">
+				<div class="widget__field">
+					<div class="widget__field-output" id="nowTime">17:34</div>
+				</div>
+				<div class="widget__date" id="nowDate">Thursday, 18th October 2017</div>
+			</div>
+			<div class="widget__display  widget__display--stopwatch" data-tab="stopwatch">
+				<div class="widget__field">
+					<div class="widget__field-output" id="stopwatchOutput">0:00.00</div>
+				</div>
+				<div class="widget__panel">
+					<button class="widget__reset" id="resetStopwatch"><i class="icon-reset"></i></button>
+					<button class="widget__btn  widget__btn--circle" id="setStopwatch"><i></i></button>
+				</div>
+			</div>
+			<div class="widget__display  widget__display--timer" data-tab="timer">
+				<div class="widget__field">
+					<div class="widget__field-input" id="timerInput">
+						<input type="text" maxlength="2" placeholder="00"  id="timerHours" class="widget__input">
+						<span class="wdiget__field-separator">:</span>
+						<input type="text" maxlength="2" placeholder="00"  id="timerMinutes" class="widget__input">
+						<span class="wdiget__field-separator">:</span>
+						<input type="text" maxlength="2" placeholder="00"  id="timerSeconds" class="widget__input">
+					</div>
+					<div class="widget__field-output" id="timerOutput">00:00:00</div>
+				</div>
+				<div class="widget__panel">
+					<button class="widget__reset" id="resetTimer"><i class="icon-reset"></i></button>
+					<label for="enableTimerAudio" class="widget__check">
+						<input type="checkbox" id="enableTimerAudio">
+						<i></i>
+						<span class="widget__check-text">Enable Audio</span>
+					</label>
+					<button class="widget__btn  widget__btn--timer  widget__btn--circle" id="setTimer"><i></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="widget__catch">
+			<div class="widget__catch-title"><i></i> <span id="catchWord">Alarm</span></div>
+			<div class="widget__catch-time" id="catchTime">18:19</div>
+			<button class="widget__catch-btn" id="dismiss">DISMISS</button>
+		</div>
+	</div>
+
+	<script src="js/tippy.js"></script>
+	<script src="js/popup.js"></script>
+	<!-- <script src="js/background.js"></script> -->
+</body>
+</html>
